@@ -1,0 +1,40 @@
+
+
+
+/*mixin*/
+
+
+@mixin fontSize ($tamanio,$peso) {
+    font-size: $tamanio;
+    font-weight: $peso;
+}
+
+.letraGrande{
+ @include fontSize(3rem,700 )
+
+
+}
+
+.letraMediana{
+@include fontSize(2rem, 500);
+
+}
+ 
+/*maps*/
+
+$titulosTextos : (
+    titulos: rgb(63, 40, 33),
+    textos: rgb(85, 84, 84)
+
+
+);
+.colorTitulos{
+    color: map-get($map: $titulosTextos, $key: titulos);
+}
+.colorTextos{
+    color: map-get($map: $titulosTextos, $key: textos);
+}
+
+
+
+

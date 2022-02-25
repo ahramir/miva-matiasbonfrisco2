@@ -5,4 +5,133 @@
     box-sizing: border-box;
  }
 
+/*import*/
  
+ @import "estructura";
+ @import "extend";
+ 
+
+
+ 
+
+ /*grid*/
+#griAreas{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "foto"
+    "footer"
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 2f 2fr 1fr;
+ }
+ 
+ 
+ 
+    .gridDiv{
+       display: flex;
+       justify-content: center;
+      
+    }
+ 
+    .foto{
+       margin-top: 50px;
+       margin-left: 40px;
+    }
+    article{
+       text-align: center;
+    }
+    
+ 
+    h2{
+       margin-top: 50px; 
+    }
+    p{
+       margin-top: 30px;
+       font-size: 20px;
+    }
+ 
+    .border3{
+       margin-left: 20px;
+       margin-bottom: 10px;
+       margin-top: 60px;
+       margin-right: 39px; 
+       border: solid 10px;
+       color:black
+    }
+    .border1{
+       margin-right: 40px;
+       margin-top: 25px;
+       margin-bottom: 20px;
+       border: solid 10px;
+       color:white;
+       border-radius: 50%;
+ 
+    }
+ 
+    .border5{
+       margin-left: 30%;
+       margin-bottom: 30px;
+       margin-top: 30px;
+       margin-right: 30%;
+       border: solid 10px;
+       color:black;
+       
+ 
+    }
+    .border2{
+       border: solid 10px;
+       color:black;
+       margin-left: 0px;
+       
+       }
+ 
+       .titulo2{
+          display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        padding-left: 30px;
+        margin-top: 40px;
+        
+       }
+       
+        /*animaciones*/
+        
+       .titulo2{
+          animation-name: titulo2;
+          animation-iteration-count: 1;
+          animation-duration: 1s;
+          color: black;
+          animation-timing-function: cubic-bezier(.33,.2,.25,.85);
+       }
+    
+       @keyframes titulo2{
+          from{
+             transform: translate(-100px);
+             opacity: 0;
+          }
+          to{
+                transform: translate(0);
+                opacity: 1;
+    
+          }
+ 
+          /*transiciones*/
+       }
+       .mapa{
+          height: 200px;
+          width: 200px;
+       }
+       .mapa{
+          transition: width 2s , height 2s;
+    
+       }
+       .mapa:hover{
+          width: 50%;
+          height: 300px;
+          
+       }

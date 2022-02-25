@@ -1,0 +1,35 @@
+
+
+/*variable*/
+
+$colorFondo: lightgrey;
+$color:black;
+
+
+/*extend*/
+
+.bgc-color{
+   background-color:$colorFondo;
+}
+
+
+header{
+    grid-area: header;
+    @extend .bgc-color;
+ }
+ main{
+    grid-area: main;
+    @extend .bgc-color;
+ }
+ section{
+    grid-area: foto;
+    @extend .bgc-color;
+ }
+ 
+ footer{
+    grid-area: footer;
+    @extend .bgc-color;
+    color: $color;
+ }
+
+ 
